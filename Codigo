@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var entradas = Console.ReadLine();
+        var pulo = int.Parse(entradas.Split(" ")[0]);
+        var ultimoNumero = int.Parse(entradas.Split(" ")[1]);
+
+       for (int i = 1; i <= ultimoNumero; i++)
+        {
+           Console.Write(i);
+           if (i % pulo == 0)
+           {
+             Console.WriteLine("");
+           }
+           else
+           {
+             Console.Write(" ");
+           }
+        }
+    }
+}
